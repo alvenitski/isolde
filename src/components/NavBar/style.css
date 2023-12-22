@@ -1,0 +1,69 @@
+/*NavBar Design*/
+.navbar-container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 50%;
+}
+
+.navbar-logo-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.navbar-logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-link-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.page-links {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(5, 0, 51, 0.6);
+    transition: linear 0.2s;
+}
+
+.page-links.active {
+    color: rgba(5, 0, 51, 1);
+}
+
+#arrow {
+    display: block;
+    position: relative;
+    bottom: 18px;
+    left: 110px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 2px solid rgba(5, 0, 51, 0.6);
+    border-left: 2px solid rgba(5, 0, 51, 0.6);
+    transform: rotate(135deg);
+    transition: linear 0.2s;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex;
+    flex-direction :column;
+}
+
+.sublinks {
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(5, 0, 51, 0.6);
+}
+
+.sublinks:hover{
+    font-weight: 600;
+}

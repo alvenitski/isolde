@@ -1,0 +1,71 @@
+/* Design pour PopUp Component onClick*/
+.popup{
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position:fixed;
+    top:0;
+    left:0;
+  }
+
+  .popup .enlarged-image {
+    width: auto;
+    height: 800px;
+    object-fit: cover; 
+    position: absolute;
+    top: 50%;                
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup .enlarged-image img{
+    width: auto;
+    height: 800px;
+    object-fit: cover; 
+  }
+
+  .close-btn {
+    border: none;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: 59px;
+    top: 15px;
+  }
+
+  .close-btn:hover{
+    cursor: pointer;
+  }
+
+/*Stolen Arrow Design*/
+.popup .arrow-right,
+.arrow-left{
+  display: block;
+  margin: 30px auto;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.popup .arrow-left{
+  transform: rotate(-45deg);
+   position: absolute;
+    top: 400px;
+    left: 150px;
+  }
+
+
+.popup .arrow-right{
+ transform: rotate(135deg);
+ position: absolute;
+    top: 400px;
+    right: 150px;
+}
+
+.arrow-right:hover, .arrow-left:hover{
+  cursor:pointer;
+}

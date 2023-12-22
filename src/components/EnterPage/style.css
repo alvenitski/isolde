@@ -1,0 +1,52 @@
+.enter-page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/images/paintings/enter1610.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    --blue: rgba(1, 0, 31, 0.8);
+    --purple: rgba(71, 0, 112, 0.795);
+}
+#quote-container{
+    width: 600px;
+    font-size:20px;
+    position:relative;
+    bottom: 200px;
+}
+#enter-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    border-radius: 2px;
+    width: 100px;
+    height: 50px;
+}
+
+#enter-button{
+    width: 92px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+#enter-button:hover {
+    border: 2px dotted var(--purple);
+    border-radius: 2px ;
+    cursor:pointer;
+}
+
+#enter-button-container:active{
+ width: 102px;
+ height: 52px;
+}
